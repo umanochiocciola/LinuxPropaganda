@@ -1,7 +1,7 @@
 '''
 BrainFuck to C transpiler
 
-GNU GPLv3
+GNU GPLv3 or higher
 '''
 from sys import argv
 import os
