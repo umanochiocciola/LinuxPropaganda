@@ -1,3 +1,8 @@
+'''
+BrainFuck to C transpiler
+
+GNU GPLv3
+'''
 from sys import argv
 import os
 
@@ -53,7 +58,6 @@ debug('creating references')
 repls = {
     '+': 'tape[ptr]++; if (tape[ptr]>255) {tape[ptr] = 0;}',
     '-': 'tape[ptr]--; if (tape[ptr]<0) {tape[ptr] = 255;}',
-    '#': 'tape[ptr] = 0;',
     '<': 'ptr++; if (ptr>=CELLS) ptr=0;',
     '>': 'ptr--; if (ptr<0) ptr = CELLS-1;',
     '.': 'printf("%d", tape[ptr]);',
