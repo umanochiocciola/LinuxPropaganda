@@ -1,0 +1,13 @@
+#!/bin/python3
+from random import choice
+
+# random color + random quote
+print('\33[0;3'+str(choice([1, 2, 3, 6]))+'m',
+	choice([
+
+	"It shall be done, comrade",
+	"As you wish, honey :3",
+	"Executing, my love",
+	"I'll do it for you, sweetheart",
+
+	])+':\n')
